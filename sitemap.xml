@@ -28,6 +28,11 @@
   </url>
   
   <url>
+    <loc>http://www.4stack.pro/blog/20191127-05/</loc>
+    <lastmod>2019-11-27T19:19:52+08:00</lastmod>
+  </url>
+  
+  <url>
     <loc>http://www.4stack.pro/blog/20191127-01/</loc>
     <lastmod>2019-11-27T19:19:52+08:00</lastmod>
   </url>
@@ -435,6 +440,11 @@
   <url>
     <loc>http://www.4stack.pro/blog/20191123/</loc>
     <lastmod>2019-11-22T08:29:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.4stack.pro/blog/20191127-06/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>
