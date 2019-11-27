@@ -4,12 +4,22 @@
   
   <url>
     <loc>http://www.4stack.pro/blog/</loc>
-    <lastmod>2019-11-27T19:29:52+08:00</lastmod>
+    <lastmod>2019-11-27T19:59:52+08:00</lastmod>
   </url>
   
   <url>
     <loc>http://www.4stack.pro/</loc>
-    <lastmod>2019-11-27T19:29:52+08:00</lastmod>
+    <lastmod>2019-11-27T19:59:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.4stack.pro/blog/new/</loc>
+    <lastmod>2019-11-27T19:59:52+08:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://www.4stack.pro/blog/20191127-06/</loc>
+    <lastmod>2019-11-27T19:39:52+08:00</lastmod>
   </url>
   
   <url>
@@ -440,11 +450,6 @@
   <url>
     <loc>http://www.4stack.pro/blog/20191123/</loc>
     <lastmod>2019-11-22T08:29:52+08:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://www.4stack.pro/blog/20191127-06/</loc>
-    <priority>0</priority>
   </url>
   
 </urlset>
