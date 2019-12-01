@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>unique on m 傳媒</title>
+    <link>http://www.4stack.pro/tags/unique/</link>
+    <description>Recent content in unique on m 傳媒</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Dec 2019 21:52:19 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.4stack.pro/tags/unique/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Python | Get unique values from a list</title>
+      <link>http://www.4stack.pro/article/python/unique/</link>
+      <pubDate>Sun, 01 Dec 2019 21:52:19 +0800</pubDate>
+      
+      <guid>http://www.4stack.pro/article/python/unique/</guid>
+      <description>Given a list, print all the unique numbers in any order. Examples: Input : 10 20 10 30 40 40 Output : 10 20 30 40
+Input : 1 2 1 1 3 4 3 3 5 Output : 1 2 3 4 5</description>
+    </item>
+    
+  </channel>
+</rss>
