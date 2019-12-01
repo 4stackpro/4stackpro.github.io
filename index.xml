@@ -6,10 +6,19 @@
     <description>Recent content on m 傳媒</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 01 Dec 2019 22:11:43 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 01 Dec 2019 22:50:00 +0800</lastBuildDate>
     
 	<atom:link href="http://www.4stack.pro/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>好市多台中二店悄悄動土明年底完工營運</title>
+      <link>http://www.4stack.pro/blog/new/</link>
+      <pubDate>Sun, 01 Dec 2019 22:50:00 +0800</pubDate>
+      
+      <guid>http://www.4stack.pro/blog/new/</guid>
+      <description>好市多台中二店悄悄動土明年底完工營運 備受矚目的好市多（COS</description>
+    </item>
     
     <item>
       <title>買「泰達幣」被搶1500萬元</title>
@@ -26,8 +35,7 @@
       <pubDate>Sun, 01 Dec 2019 21:52:19 +0800</pubDate>
       
       <guid>http://www.4stack.pro/article/python/unique/</guid>
-      <description>Given a list, print all the unique numbers in any order. Examples: Input : 10 20 10 30 40 40 Output : 10 20 30 40
-Input : 1 2 1 1 3 4 3 3 5 Output : 1 2 3 4 5</description>
+      <description>Given a list, print all the unique numbers in any order. 取得佇列中不重複的值 Examples: Input : 10 20 10 30 40 40</description>
     </item>
     
     <item>
