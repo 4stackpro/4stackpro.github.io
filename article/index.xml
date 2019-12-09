@@ -6,28 +6,9 @@
     <description>Recent content in Articles on 房地產賺錢筆記</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-TW</language>
-    <lastBuildDate>Sun, 01 Dec 2019 21:52:19 +0800</lastBuildDate>
     
 	<atom:link href="http://www.4stack.pro/article/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Python | Get unique values from a list</title>
-      <link>http://www.4stack.pro/article/python/unique/</link>
-      <pubDate>Sun, 01 Dec 2019 21:52:19 +0800</pubDate>
-      
-      <guid>http://www.4stack.pro/article/python/unique/</guid>
-      <description>Given a list, print all the unique numbers in any order. 取得佇列中不重複的值 Examples: Input : 10 20 10 30 40 40</description>
-    </item>
-    
-    <item>
-      <title>台南高鐵接駁</title>
-      <link>http://www.4stack.pro/article/tainan/</link>
-      <pubDate>Sun, 01 Dec 2019 21:52:19 +0800</pubDate>
-      
-      <guid>http://www.4stack.pro/article/tainan/</guid>
-      <description></description>
-    </item>
     
     <item>
       <title></title>
