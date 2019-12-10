@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Samsung on 轉貼達人</title>
+    <link>http://www.4stack.pro/tags/samsung/</link>
+    <description>Recent content in Samsung on 轉貼達人</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-TW</language>
+    <lastBuildDate>Wed, 11 Dec 2019 06:52:41 +0800</lastBuildDate>
+    
+	<atom:link href="http://www.4stack.pro/tags/samsung/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>三星摺疊屏一月體驗：還行</title>
+      <link>http://www.4stack.pro/blog/20191211-02/</link>
+      <pubDate>Wed, 11 Dec 2019 06:52:41 +0800</pubDate>
+      
+      <guid>http://www.4stack.pro/blog/20191211-02/</guid>
+      <description>有一說一，四月份我第一次上手三星的摺疊屏手機 Galaxy Fold 的時候，開箱</description>
+    </item>
+    
+  </channel>
+</rss>
