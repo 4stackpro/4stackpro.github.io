@@ -846,3 +846,31 @@ iframe {
 .sticky-top-80 {
     top: 80px;
 }
+
+
+.mycard {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.2s ease-in-out;
+  box-sizing: border-box;
+  margin-top:10px;
+  margin-bottom:10px;
+  background-color:#FFF;
+}
+
+.mycard:hover {
+  box-shadow: 0 5px 5px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+}
+.mycard > .mycard-inner {
+  padding:10px;
+}
+.mycard .header h2, h3 {
+  margin-bottom: 0px;
+  margin-top:0px;
+}
+.mycard .header {
+  margin-bottom:5px;
+}
+.mycard img{
+  width:100%;
+}
+
