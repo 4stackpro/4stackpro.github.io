@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Rumor Theory</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 11 Mar 2020 08:52:28 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 18 Mar 2020 12:15:01 +0800</lastBuildDate>
     
 	<atom:link href="http://www.4stack.pro/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>chinese</title>
+      <link>http://www.4stack.pro/categories/chinese/</link>
+      <pubDate>Wed, 18 Mar 2020 12:15:01 +0800</pubDate>
+      
+      <guid>http://www.4stack.pro/categories/chinese/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>english</title>
