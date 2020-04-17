@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+        
+<html lang="zh-Hant-TW">
+		<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="generator" content="Hugo 0.65.3" />
+	
+	<link rel="icon" href="http://www.4stack.pro/img/logo.png">
+	
+	<title>Hack the Box (HTB) machines walkthrough series — Forest | Rumor Theory</title>
+	
+	
+
+	<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Hack the Box (HTB) machines walkthrough series — Forest"/>
+<meta name="twitter:description" content="Today we will be continuing with our exploration of Hack the Box (HTB) machines as seen in previous articles. This walkthrough is of an HTB machine named Forest.
+HTB is an excellent platform that hosts machines belonging to multiple OSes."/>
+
+	<meta property="og:title" content="Hack the Box (HTB) machines walkthrough series — Forest" />
+<meta property="og:description" content="Today we will be continuing with our exploration of Hack the Box (HTB) machines as seen in previous articles. This walkthrough is of an HTB machine named Forest.
+HTB is an excellent platform that hosts machines belonging to multiple OSes." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://www.4stack.pro/news/hack-the-box-htb-machines-walkthrough-series-forest/" />
+<meta property="article:published_time" content="2020-04-17T04:38:12+08:00" />
+<meta property="article:modified_time" content="2020-04-17T04:38:12+08:00" />
+
+
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    
+    
+    <link href="http://www.4stack.pro/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="http://www.4stack.pro/css/demo.css" rel="stylesheet" />
+    <link href="http://www.4stack.pro/css/navbar-top-fixed.css" rel="stylesheet" />
+
+
+
+ 
+
+
+
+
+
+  
+  <meta property="og:image" content="http://www.4stack.pro/news/hack-the-box-htb-machines-walkthrough-series-forest/cover.jpg" />
+
+
+
+
+
+ 
+
+
+
+	<meta name="keywords" content=""/>
+	<meta name="description" content=""/>
+
+
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+	 crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Righteous%7CMerriweather:300,300i,400,400i,700,700i" rel="stylesheet">
+	<link href="http://www.4stack.pro/css/medium.css" rel="stylesheet">
+	<link href="http://www.4stack.pro/css/additional.css" rel="stylesheet">
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+
+<script data-ad-client="ca-pub-2730293094729387" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script><script type="application/ld+json">
+
+
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Rumor Theory",
+  "url": "http://www.4stack.pro/",
+  "sameAs": [
+    "https://www.facebook.com/m.media168"
+  ]
+}
+
+</script>
+</head>
+<body>
+
+
+ <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="http://www.4stack.pro/">M media</a>
+	  &nbsp; <div id="navbar_top" name="navbar_top"></div>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto" id="mymenu">
+        </ul>
+      </div>
+    </nav>
+
+
+
+
+
+
+        <div class="site-content">   
+            <div class="container">
+<div class="main-content">
+        
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-2 pl-0"><div class="share sticky-top sticky-top-offset">
+    <p>Share</p>
+    <ul>
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://twitter.com/intent/tweet?text=Hack%20the%20Box%20%28HTB%29%20machines%20walkthrough%20series%20%e2%80%94%20Forest&url=http%3a%2f%2fwww.4stack.pro%2fnews%2fhack-the-box-htb-machines-walkthrough-series-forest%2f" onclick="window.open(this.href, 'twitter-share', 'width=550,height=435');return false;">
+        <i class="fab fa-twitter"></i>
+        </a>
+        </li>
+        
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://facebook.com/sharer.php?u=http%3a%2f%2fwww.4stack.pro%2fnews%2fhack-the-box-htb-machines-walkthrough-series-forest%2f" onclick="window.open(this.href, 'facebook-share', 'width=550,height=435');return false;">
+        <i class="fab fa-facebook-f"></i>
+        </a>
+        </li>
+
+        <li class="ml-1 mr-1">
+        <a target="_blank" href="https://www.xing.com/spi/shares/new?url=http%3a%2f%2fwww.4stack.pro%2fnews%2fhack-the-box-htb-machines-walkthrough-series-forest%2f" onclick="window.open(this.href, 'xing-share', 'width=550,height=435');return false;">
+        <i class="fab fa-xing"></i>
+        </a>
+        </li>        
+    </ul>
+
+    
+</div>
+</div>
+                                
+                <div class="col-md-9 flex-first flex-md-unordered">
+                    <div class="mainheading">
+                        	
+                                                
+                        
+                        <h3 class="posttitle">Hack the Box (HTB) machines walkthrough series — Forest</h3> 
+                    </div>
+
+                    
+                    
+                    
+                    
+
+                    
+                    <div class="article-post">
+
+						 <p><img src="https://mk0resourcesinfm536w.kinstacdn.com/wp-content/uploads/1-349.png" alt="img">
+Today we will be continuing with our exploration of Hack the Box (HTB) machines as seen in previous articles. This walkthrough is of an HTB machine named Forest.</p>
+<p>HTB is an excellent platform that hosts machines belonging to multiple OSes. It also has some other challenges as well. Individuals have to solve the puzzle (simple enumeration plus pentest) in order to log into the platform and download the VPN pack to connect to the machines hosted on the HTB platform.</p>
+<p>Note: Only write-ups of retired HTB machines are allowed. The machine in this article, named Forest, is retired.</p>
+<p>The walkthrough</p>
+<p>Let’s start with this machine.
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2730293094729387"
+     data-ad-slot="6787193373"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</p>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2730293094729387"
+     data-ad-slot="6787193373"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<h3 id="iowa-sending-new-rapid-test-machines-to-rural-hospitals">Iowa sending new rapid-test machines to rural hospitals</h3>
+<p><img src="https://quincy-network.s3.ca-central-1.amazonaws.com/wp-content/uploads/sites/3/2020/03/IOWA-CORONAVIRUS-COVID-19-MGN-860x484.jpg" alt="img">
+IOWA CITY, Iowa (AP) &ndash; Iowa officials are sending machines that can conduct rapid coronavirus testing to health care facilities in rural areas, including some that currently have few confirmed cases.</p>
+<p>The office of Gov. Kim Reynolds said the machines are being stationed at hospitals in Osceola, Red Oak, Spencer, Mount Ayr, Manchester, Algona, Storm Lake and Boone.</p>
+<p>The machines are also being sent to the Iowa Veterans Home in Marshalltown and hospitals in Waukon, Washington, Columbus City, and Independence.</p>
+<p>A spokesman for the governor, Pat Garrett, says the Iowa Department of Public Health focused on communities that do not have other testing resources close by, have high populations of elderly citizens and could serve as regional hubs.
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2730293094729387"
+     data-ad-slot="6787193373"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</p>
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2730293094729387"
+     data-ad-slot="6787193373"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+
+<h3 id="how-gm-and-ford-switched-out-pickup-trucks-for-breathing-machines">How GM and Ford switched out pickup trucks for breathing machines</h3>
+<p><img src="https://cdn.vox-cdn.com/thumbor/GjaK4DhJ7H8qP6v6p2Wuply1K6w=/0x215:3000x1786/fit-in/1200x630/cdn.vox-cdn.com/uploads/chorus_asset/file/19900089/GMVentilators185.jpg" alt="img">
+In the most severe cases of COVID-19, a patient’s lungs become so inflamed and full of fluid that they no longer deliver enough oxygen to the bloodstream to keep that person alive. One way to counteract this is by using a ventilator, which helps the patient’s lungs operate while the rest of the body fights off the virus.</p>
+<p>As the spread of the new coronavirus bloomed into a pandemic, it became clear that there may not be enough ventilators in the United States (and around the world) to treat the coming wave of patients with these severe symptoms.</p>
+<p>The race to build more ventilators has seen automakers like Ford, General Motors, and Tesla morph into de facto ventilator distributors and designers, while also helping medical device companies scale up production of the critical equipment. Ford and GM have turned the lights back on at some of their idled facilities to start producing ventilators themselves, with the Trump administration going so far as to use the Korean War-era Defense Production Act (DPA) on the latter to ensure that whatever they make goes directly to the national stockpile. Other technology companies, like Virgin Orbit (Richard Branson’s rocket-launching division), SpaceX, and Dyson, have joined the effort as well.</p>
+<p>What is a ventilator, anyway?</p>
+<p>It’s currently unclear if that combined effort will be enough to stop a ventilator shortage from happening in the US, as there has been in other countries like Italy. But as these companies spin up their operations, it’s worth knowing why they got involved, why we’re facing a shortage, and what, exactly, a ventilator is in the first place.</p>
+<p>What is a ventilator?</p>
+<p>A ventilator is a mechanical device that helps a patient breathe by inflating the lungs and delivering fresh gas to their respiratory system, according to Neil MacIntyre, the medical director of the respiratory therapy department at Duke University. Ventilators often accomplish this with a tube that runs into a patient’s trachea, making it an “invasive” device. There are “noninvasive” ventilators that help deliver gas to a patient’s respiratory system via a removable mask or a “nasal pillow.” Doctors have largely avoided using the noninvasive models because they could increase the risk of spreading the coronavirus in hospitals since patients can still cough virus-laden droplets into the air.</p>
+<p>Invasive ventilators can help support a patient’s breathing while their body fights off the effects of the virus. But ventilators are not a cure for COVID-19, and doctors using the devices can only hope that they will buy patients a little more time as they battle the infection.</p>
+<p>Ventilators are not a cure for COVID-19, but they help buy time</p>
+<p>Advanced invasive ventilators are in high demand because, as MacIntyre explains, lungs are supremely “delicate structures,” and ventilators can “really cause more harm than good” if the wrong settings are used. It takes a trained respiratory therapist to make sure the ventilator is delivering the precise airflow to properly ventilate a patient’s lungs, providing the right amount of oxygen, and helping cycle out (or “expire”) carbon dioxide.</p>
+<p>The critical care ventilators in the highest demand are built to be used in intensive care units (ICUs), but there is a wide variety of ventilators, typically designed for specific care environments, according to Chris Brooks, the chief strategy officer at Washington-based ventilator manufacturer Ventec Life Systems. In addition to the ICU ventilators, there are more portable versions that can be used in a home setting and so on. In fact, Brooks says, this variety is one of the reasons why it’s been hard to get an accurate count of how many the country already has, and therefore how many more are needed.</p>
+<p>Brooks says Ventec has developed a ventilator that can bridge the intensive care and home environments, and it’s currently working to mass-produce it with General Motors. Ford, meanwhile, recently announced that it’s helping General Electric manufacture a simple ventilator that doesn’t require electricity to operate, which could find use in field hospitals.</p>
+<p>While these simpler designs are easy to manufacture and will be used if needed, Brooks says that, broadly, hospitals and governors around the US want the complex ventilators with the most features. Those features give respiratory therapists more precise control over the ventilator, allowing them to adjust settings to accommodate changes in the patient’s condition.</p>
+<p>“Every day you’re on a ventilator, the less chance you have of coming off of that ventilator.”</p>
+<p>MacIntyre and Brooks say more advanced ventilators make it easier to wean a patient off of a ventilator when the time comes — a crucial part of the process, especially because the longer a patient is on a ventilator, the fewer there are to go around.</p>
+<p>“These devices support life and buy time, but they don’t cure anything. There is nothing therapeutic about a ventilator. It’s a support device,” MacIntyre says. “The best you can hope for is that it effectively buys some time without hurting the lung.”</p>
+<p>Brooks puts it more bluntly: “Every day you’re on a ventilator, the less chance you have of coming off of that ventilator.”</p>
+<p>Why are automakers making ventilators?</p>
+<p>While there were between 160,000 and 200,000 ventilators in the United States as of mid-March, some health experts believe as many as 1 million COVID-19 patients might need the devices in the country over the course of the pandemic, while others think it will be in the mid-to-high hundreds of thousands. One reason the country in this position is the repeated failure of the federal government to build up a proper ventilator stockpile.</p>
+<p>The Department of Health and Human Services (HHS) had anticipated as far back as the early 2000s that a pandemic could cause a potential ventilator shortage, according to ProPublica. But despite millions of dollars invested in designing more portable emergency ventilators, by March 13th, 2020, only 12,000–13,000 ventilators were stored in the Strategic National Stockpile.</p>
+<p>A number of companies have stepped up to try to make up for this shortfall, and the ones shouldering the biggest efforts are automakers like GM and Ford, which recently shut down car production amid the pandemic.</p>
+<p>Automakers have a deep supply chain, work with similar materials, and had already stopped building cars</p>
+<p>GM is helping Ventec Life Systems increase its rate of ventilator production, and it has made space at its factory in Kokomo, Indiana, to manufacture Ventec ventilators. Ford is engaged in a similar effort, working with General Electric’s health care division to help increase production at a Florida ventilator company called Airon. Ford is also going to manufacture Airon ventilators licensed by GE at one of the car company’s idled factories.</p>
+<p>Automakers are well-suited for these partnerships for a few reasons, according to Adrian Price, the global vehicle engineering director at Ford who’s overseeing the company’s ventilator effort. Not only do these companies already work with components that are similar to the ones found in ventilators, but cars are highly complex products that require a unique amount of knowledge, planning, coordination, and logistics to build.</p>
+<p>The new coronavirus is spreading through the US, and several states have made emergency declarations. The World Health Organization has declared it a pandemic. Here are the basics: Everything you need to know about the coronavirus</p>
+<p>“There’s thousands and thousands of parts that we assemble, and each of those parts is made up of a number of subassemblies that are sourced [from] around the world at multiple tiers deep,” Price says. “You could probably take any subsystem of that vehicle and it would be more complex than the average consumer product.”</p>
+<p>Brooks, who’s spent the last few weeks working with GM, agrees. “They have a fantastic supply base, so they are sourcing a lot of the same materials, whether it’s plastic or metals, and these are suppliers who have been working with them for years and they have a really good relationship and working understanding of their ability or inability to make certain parts,” he says. They also have the advantage of scale, Brooks says, with car companies making thousands of cars per week, while ventilator companies normally make just hundreds or dozens of ventilators during the same time.</p>
+<p>Since the big automotive companies may have an advantage in manufacturing, their efforts to build ventilators have attracted the attention of the federal government, which is still trying to plug the giant gap in its ventilator stockpile.</p>
+<p>Trump has said he believes the need for ventilators is overblown but ultimately used the DPA to order 30,000 of the ventilators being made by GM and Ventec to help stock up.</p>
+<p>The DPA is a Korean War-era law that essentially lets the government jump ahead of other buyers of critical goods in times of need. While the Department of Defense has used it hundreds of thousands of times per year under Trump to procure materials for missiles and drones, the administration has been reluctant to use it to fill the apparent need for ventilators.</p>
+<p>What about Tesla and the other companies making noise about ventilators?</p>
+<p>Elon Musk has said that Tesla (and SpaceX) will help make the crucial devices as well, and he has been working with Medtronic to find a way to manufacture them at one of his companies’ factories. In the meantime, his companies have been buying equipment from China and shipping it to hospitals and governments in need.</p>
+<p>While Musk has provided at least one batch of invasive Medtronic ICU ventilators to New York City, he has mostly focused on procuring noninvasive ventilators (often used to treat sleep apnea) that hospitals are then repurposing into invasive critical care versions.</p>
+<p>The devices donated by Tesla can be “modified to provide safe and monitored ventilation to patients” who are experiencing acute respiratory failure, according to a post by David Reich, the president and chief operating officer at Mount Sinai Hospital in New York City.</p>
+<p>Elon Musk says Tesla will build ventilators, but he’s currently supplying devices that need to be reworked</p>
+<p>His team has figured out how to make the devices work through a tracheal tube (which helps reduce the risk of coronavirus exposure). They’ve also added “monitoring devices to allow for precise measurement and display of inspired oxygen concentration, tidal volume delivery, and expired carbon dioxide levels,” allaying some of the concerns that people like Brooks have expressed about hospitals using ventilators that weren’t designed for a critical care setting.</p>
+<p>Meanwhile, Virgin Orbit has started making a new breathing device from the ground up, combining its own manufacturing and supply prowess with its employees’ advanced engineering skills to create something that could help patients who don’t need something as serious as a ventilator.</p>
+<p>What comes next?</p>
+<p>The potential for a ventilator shortfall will remain as the number of COVID-19 cases continues to rise in the United States, especially because it will take time for Ford, GM, Tesla, and the ventilator companies to increase production.</p>
+<p>GM and Ventec have said they will only be able to make a few hundred new ventilators in April before ultimately ramping up to as many as 10,000 per month. Ford, meanwhile, says it will build 12,000 of its more simple ventilators by the end of May and 50,000 by July.</p>
+<p>But even as these companies ramp up production, experts worry that we could wind up with a shortage of qualified medical professionals to operate the ventilators.</p>
+<p>“The limiting factor for ventilator use will most likely not be ventilators but healthy respiratory therapists and trained critical care staff to operate them safely over three shifts every day,” a group of doctors from across North America wrote in The New England Journal of Medicine last month.</p>
+<p>Brooks says this is one reason why Ventec is trying to accelerate production of its more approachable ventilator with GM. “We’ve very intentionally designed our device to be easy to use, so it has a touchscreen that works much like a cell phone rather than a complicated medical device,” he says. “It still requires supervision from a respiratory therapist, and a trained clinician, but we have a lot of training available on our website for anyone who’s curious to learn how to use it.”</p>
+<p>The risk of a shortage of critical care ventilators (and personnel to operate them) is why Ford decided to help scale up a simpler ventilator, according to Price. “The data shows that the number of [COVID-19] cases requiring ventilator treatment quickly outgrows the capability of traditional medical facilities,” he says. “[We wanted] to be able to get units out into the field as fast as we could, because it seemed to us that, you know, having a ventilator that was very high-end and had a lot of electronics components was necessarily going to slow down the process.”</p>
+<p>That said, MacIntyre, the respiratory therapy expert, says he’s wary of using overly simple ventilators, even in the absence of more advanced ones.</p>
+<p>“I am just afraid that as we get to more and more primitive machines, that the monitoring and the flexibility that you need to properly care for sick people is gonna get progressively less,” he says. “A bigger problem is having people who use them properly. My therapists at Duke, for instance, say if you give them a simple device, they can make it work safely. But they’re really sharp folks. And I’m afraid that level of expertise is not widespread.”
+
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<ins class="adsbygoogle"
+     style="display:block; text-align:center;"
+     data-ad-layout="in-article"
+     data-ad-format="fluid"
+     data-ad-client="ca-pub-2730293094729387"
+     data-ad-slot="6787193373"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+</p>
+
+						
+						
+						
+                    </div>
+                    
+                    
+                    <div class="after-post-tags">
+
+
+		
+                    
+                    </div>
+                    
+                    
+
+
+
+
+                </div>
+                
+            </div>
+        </div>
+        
+        
+    </div>
+
+
+            </div>
+<div class="jumbotron fortags">
+	<div class="d-md-flex h-100">
+		<div class="col-md-4 transpdark align-self-center text-center h-100">
+			<div class="d-md-flex align-items-center justify-content-center h-100">
+				<h2 class="d-md-block d-none align-self-center py-1 font-weight-light">Explore <span class="d-none d-md-inline">→</span></h2>
+			</div>
+		</div>
+
+
+	</div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-6 text-center text-lg-left">
+               m donation charity &copy; Copyright 
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+        </div>
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<script src="http://www.4stack.pro/js/mediumish.js"></script>
+
+
+<script>
+var userLang = navigator.language || navigator.userLanguage;
+
+	$("#mymenu").append(' <li class="nav-item"><a class="nav-link" href="http://www.4stack.pro/series/pop-rumor">News</a></li>'); 
+	$("#navbar_top").html(' <a href="http://www.4stack.pro/series/pop-rumor">More Rumors➜➜</a>');
+
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-153100602-3', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+
+    </body>
+</html>
