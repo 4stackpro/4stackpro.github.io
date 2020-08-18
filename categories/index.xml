@@ -1,49 +1,49 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Rumor Theory</title>
-    <link>http://news.a4tv.org/categories/</link>
-    <description>Recent content in Categories on Rumor Theory</description>
+    <title>Categories on Charity News</title>
+    <link>http://charity.a4tv.org/categories/</link>
+    <description>Recent content in Categories on Charity News</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Wed, 15 Jul 2020 21:59:11 +0800</lastBuildDate>
     
-	<atom:link href="http://news.a4tv.org/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://charity.a4tv.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>other</title>
-      <link>http://news.a4tv.org/categories/other/</link>
+      <link>http://charity.a4tv.org/categories/other/</link>
       <pubDate>Wed, 15 Jul 2020 21:59:11 +0800</pubDate>
       
-      <guid>http://news.a4tv.org/categories/other/</guid>
+      <guid>http://charity.a4tv.org/categories/other/</guid>
       <description></description>
     </item>
     
     <item>
       <title>chinese</title>
-      <link>http://news.a4tv.org/categories/chinese/</link>
+      <link>http://charity.a4tv.org/categories/chinese/</link>
       <pubDate>Sun, 21 Jun 2020 14:31:43 +0800</pubDate>
       
-      <guid>http://news.a4tv.org/categories/chinese/</guid>
+      <guid>http://charity.a4tv.org/categories/chinese/</guid>
       <description></description>
     </item>
     
     <item>
       <title>english</title>
-      <link>http://news.a4tv.org/categories/english/</link>
+      <link>http://charity.a4tv.org/categories/english/</link>
       <pubDate>Thu, 05 Mar 2020 16:37:33 +0800</pubDate>
       
-      <guid>http://news.a4tv.org/categories/english/</guid>
+      <guid>http://charity.a4tv.org/categories/english/</guid>
       <description></description>
     </item>
     
     <item>
       <title>japan</title>
-      <link>http://news.a4tv.org/categories/japan/</link>
+      <link>http://charity.a4tv.org/categories/japan/</link>
       <pubDate>Thu, 05 Mar 2020 14:46:00 +0800</pubDate>
       
-      <guid>http://news.a4tv.org/categories/japan/</guid>
+      <guid>http://charity.a4tv.org/categories/japan/</guid>
       <description></description>
     </item>
     

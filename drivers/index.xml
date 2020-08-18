@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Drivers on Rumor Theory</title>
-    <link>http://news.a4tv.org/drivers/</link>
-    <description>Recent content in Drivers on Rumor Theory</description>
+    <title>Drivers on Charity News</title>
+    <link>http://charity.a4tv.org/drivers/</link>
+    <description>Recent content in Drivers on Charity News</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
     <lastBuildDate>Thu, 05 Mar 2020 16:37:33 +0800</lastBuildDate>
     
-	<atom:link href="http://news.a4tv.org/drivers/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="http://charity.a4tv.org/drivers/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Samsung NVMe Drivers Version 3.3.0.2003 WHQL</title>
-      <link>http://news.a4tv.org/drivers/samsung-nvme-drivers-version-3-3-0-2003-whql/</link>
+      <link>http://charity.a4tv.org/drivers/samsung-nvme-drivers-version-3-3-0-2003-whql/</link>
       <pubDate>Thu, 05 Mar 2020 16:37:33 +0800</pubDate>
       
-      <guid>http://news.a4tv.org/drivers/samsung-nvme-drivers-version-3-3-0-2003-whql/</guid>
+      <guid>http://charity.a4tv.org/drivers/samsung-nvme-drivers-version-3-3-0-2003-whql/</guid>
       <description>/*! CSS Used from: https://www.station-drivers.com/components/com_remository/remository.css */ #remository p{margin:0 0 6px 0;padding:0;} .remositorydownstatus{padding:2px;} #remositorypathway img{border:0;padding:2px;} #remositoryfooter{width:98%;padding:10px 10px 0 0;margin-top:10px;border-bottom:1px solid #999;clear:both;} #remositoryfileinfo img{padding:10px 0 0 5px;margin-top:-6px;border:0;float:left;} #remositoryinfodown{padding:12px 10px 0 5px;font-size:90%;float:left;} #remositorythumbbox{clear:left;width:95%;border-top:1px dotted #999;} .</description>
     </item>
     
