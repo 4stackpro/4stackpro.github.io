@@ -6,10 +6,19 @@
     <description>Recent content in Categories on Charity News</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 19 Aug 2020 01:09:46 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 23 Aug 2020 23:10:48 +0800</lastBuildDate>
     
 	<atom:link href="http://charity.a4tv.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>english</title>
+      <link>http://charity.a4tv.org/categories/english/</link>
+      <pubDate>Sun, 23 Aug 2020 23:10:48 +0800</pubDate>
+      
+      <guid>http://charity.a4tv.org/categories/english/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>other</title>
