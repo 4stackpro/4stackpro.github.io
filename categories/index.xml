@@ -1,33 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on Charity News</title>
+    <title>Categories on 海外投資情報</title>
     <link>http://charity.a4tv.org/categories/</link>
-    <description>Recent content in Categories on Charity News</description>
+    <description>Recent content in Categories on 海外投資情報</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sun, 23 Aug 2020 23:10:48 +0800</lastBuildDate>
+    <language>zh-TW</language>
     
 	<atom:link href="http://charity.a4tv.org/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>english</title>
-      <link>http://charity.a4tv.org/categories/english/</link>
-      <pubDate>Sun, 23 Aug 2020 23:10:48 +0800</pubDate>
-      
-      <guid>http://charity.a4tv.org/categories/english/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>other</title>
-      <link>http://charity.a4tv.org/categories/other/</link>
-      <pubDate>Wed, 19 Aug 2020 01:09:46 +0800</pubDate>
-      
-      <guid>http://charity.a4tv.org/categories/other/</guid>
-      <description></description>
-    </item>
     
   </channel>
 </rss>
