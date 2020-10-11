@@ -20,5 +20,23 @@
       <description></description>
     </item>
     
+    <item>
+      <title>english</title>
+      <link>http://charity.a4tv.org/categories/english/</link>
+      <pubDate>Sun, 23 Aug 2020 23:10:48 +0800</pubDate>
+      
+      <guid>http://charity.a4tv.org/categories/english/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>other</title>
+      <link>http://charity.a4tv.org/categories/other/</link>
+      <pubDate>Wed, 19 Aug 2020 01:09:46 +0800</pubDate>
+      
+      <guid>http://charity.a4tv.org/categories/other/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

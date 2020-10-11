@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>english on Charity News</title>
+    <title>english on 海外投資情報</title>
     <link>http://charity.a4tv.org/categories/english/</link>
-    <description>Recent content in english on Charity News</description>
+    <description>Recent content in english on 海外投資情報</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
+    <language>zh-TW</language>
     <lastBuildDate>Sun, 23 Aug 2020 23:10:48 +0800</lastBuildDate>
     
 	<atom:link href="http://charity.a4tv.org/categories/english/index.xml" rel="self" type="application/rss+xml" />
